@@ -415,8 +415,8 @@ def get_text_features(fnum, fname, df, nvalues, vectorize, ngrams_max):
 
     """
     feature = df[fname]
-    min_length = int(feature.str.len().min())
-    max_length = int(feature.str.len().max())
+    min_length = int(feature.astype(str).str.len().min())
+    max_length = int(feature.astype(str).str.len().max())
     if len(feature) == nvalues:
         logger.info("Feature %d: %s is a text feature [%d:%d] with maximum number of values %d",
                     fnum, fname, min_length, max_length, nvalues)

@@ -1200,7 +1200,7 @@ def save_predictions(model, tag, partition):
 
     try:
         predict_date = model.specs['predict_date']
-        found_pdate = True
+        found_pdate = model.specs['predict_mode']
     except:
         found_pdate = False
 
