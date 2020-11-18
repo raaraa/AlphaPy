@@ -40,7 +40,7 @@ install_reqs = [
     'scikit-learn>=0.22',
     'scipy>=1.1',
     'seaborn>=0.9',
-    'tensorflow-gpu>=2.0',
+    'tensorflow>=2.0',
 ]
 
 if __name__ == "__main__":
